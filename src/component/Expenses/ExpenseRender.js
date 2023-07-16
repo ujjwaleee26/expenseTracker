@@ -17,18 +17,29 @@ function ExpenseRender(props)
               return expense.date.getFullYear().toString()=== filteredYear;
        });
 
+       let showContent=<p>No Expenses Found</p>;
+       if(filteredByYear.length>0){
+              showContent=filteredByYear.map((expense)=><ExpenseItem  
+              key={expense.id}
+              title={expense.title}
+              amount={expense.amount}
+              date={expense.date}  />
+              );
+       }
+
        return(
          <div>
               
         <Card className="expenses">
         <ExpensesFilter onRenderFilter={UpdateOnRenderHandler} selected={filteredYear}/>
-        {filteredByYear.length===0 && <p>No Expenses Found</p>}
+        {showContent}
+        {/* {filteredByYear.length===0 && <p>No Expenses Found</p>}
         {filteredByYear.length>0 &&(filteredByYear.map((expense)=><ExpenseItem  
         key={expense.id}
         title={expense.title}
         amount={expense.amount}
         date={expense.date}  />
-        ))};
+        ))}; */}
         {/* {filteredByYear.map((expense)=><ExpenseItem  
         key={expense.id}
         title={expense.title}
