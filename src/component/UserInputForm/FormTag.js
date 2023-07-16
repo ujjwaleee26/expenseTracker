@@ -59,7 +59,7 @@ function FormTag(props)
            event.preventDefault();
            const pushData={
             title:enteredTitle,
-            amount:enteredAmount,
+            amount:+enteredAmount,
             date:new Date(enteredDate),
            };
          //  console.log(pushData);
@@ -107,7 +107,8 @@ function FormTag(props)
        
         <div className='new-expense__actions '>
          <button  onClick={CloseForm}>Cancel</button> 
-        <button type='submit'>Add Expense</button>
+        <button type='submit'>Add Expense</button>  
+        {/* onClick not use with type=submit */}
         </div>
        
     </form>)}

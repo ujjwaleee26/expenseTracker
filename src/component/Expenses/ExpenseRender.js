@@ -4,6 +4,7 @@ import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
 import React,{useState} from "react";
 import ExpenseList from "./ExpenseList";
+import ExpenseChart from './ExpenseChart';
 function ExpenseRender(props)
 
 {
@@ -34,6 +35,7 @@ function ExpenseRender(props)
               
         <Card className="expenses">
         <ExpensesFilter onRenderFilter={UpdateOnRenderHandler} selected={filteredYear}/>
+        <ExpenseChart expenses={filteredByYear}/>
         <ExpenseList detail={filteredByYear}/>
         {/* {showContent} */}
         {/* {filteredByYear.length===0 && <p>No Expenses Found</p>}

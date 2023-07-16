@@ -32,6 +32,9 @@ function App()
         setDetailArray((prevData)=>{
           return([ expense,...prevData]);
         });
+        
+        
+        
   }
   return (
     <div>
