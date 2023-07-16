@@ -10,7 +10,8 @@ function ExpenseItem(props)
         setTitle('Updated');
         console.log(title);
     }
-    return ( 
+    return (
+        <li>
     <Card className="expense-item">
        
         <ExpenseCalender date={props.date}/>
@@ -20,6 +21,7 @@ function ExpenseItem(props)
               <div className="expense-item__price">${props.amount}</div>
          </div>
          <button onClick={clickHandler}>Tap me</button>
-    </Card>);
+    </Card>
+    </li> );
 }
 export default ExpenseItem;
