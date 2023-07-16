@@ -1,0 +1,9 @@
+.expenses {
+    padding: 1rem;
+    background: linear-gradient( to right,rgb(81, 81, 203),rgb(43, 17, 43));
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    
+  }
+
