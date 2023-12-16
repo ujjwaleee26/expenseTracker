@@ -4,7 +4,7 @@ import InputForm from './component/UserInputForm/InputForm';
 const Dummy_Data = [
   {
     id: 'e1',
-    title: 'Toilet Paper',
+    title: 'Toilet Paper ',
     amount: 94.12,
     date: new Date(2020, 7, 14)
   },
