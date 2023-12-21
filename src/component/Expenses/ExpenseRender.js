@@ -13,7 +13,7 @@ function ExpenseRender(props)
        function UpdateOnRenderHandler(selectedYear)
        {
        //       console.log('ExpenseRender.js');
-            console.log(selectedYear);
+         //   console.log(selectedYear);
        setFilteredYear(selectedYear);
        }
        const filteredByYear=props.detail.filter(expense=>{

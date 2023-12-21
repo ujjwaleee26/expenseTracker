@@ -34,6 +34,7 @@ function FormTag(props)
     }
     function dateChangeHandler(event)
     {
+        console.log(event.target.value);
          setEnteredDate(event.target.value);
     //     // setUserInput({
     //     //     ...userInput,         //it takes object and pull out all key value pair so that other data is not lost
