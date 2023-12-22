@@ -10,6 +10,7 @@ function InputForm(props)
              id: Math.random().toString()
     };
     //console.log(expenseData);
+    //its done for checking
     props.onAddExpense(expenseData);
 }
       return(
