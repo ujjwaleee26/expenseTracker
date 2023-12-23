@@ -12,6 +12,7 @@ function InputForm(props)
     //console.log(expenseData);
     //its done for checking data
     //open inspect page 
+    //logsdata
     props.onAddExpense(expenseData);
 }
       return(
